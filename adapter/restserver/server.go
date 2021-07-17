@@ -22,7 +22,7 @@ func Start(conf config.Config) *Server {
 	api.server.HTTPErrorHandler = errorHandler(logger.Get(conf))
 
 	switch strings.ToUpper(conf.Env) {
-	case config.Development, config.Ext:
+	case config.Development:
 		Wrap(api.server)
 	default:
 		log.Infof("%s, profiling desabled", conf.Env)
