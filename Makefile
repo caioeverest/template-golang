@@ -7,7 +7,7 @@ include $(envfile)
 export $(shell sed 's/=.*//' $(envfile))
 export ENVIRONMENT=development
 export APP_NAME={{.RepositoryName}}
-export APP_NAME_VERSION=$(shell git branch --show-current | cut -d '/' -f2)
+export APP_VERSION=$(shell git branch --show-current | cut -d '/' -f2)
 
 test: test-base test-clean
 test-report: test-report.html test-clean
