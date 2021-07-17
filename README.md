@@ -67,6 +67,5 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available.
 ## Authors
 
 * **{{.Author}}** - *Initial work*
-* **{{.Team}}** - *Initial work*
 
 See also the list of [contributors](https://github.com/{{.Author}}/{{.RepositoryName}}/contributors) who participated in this project.
